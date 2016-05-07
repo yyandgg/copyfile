@@ -1,0 +1,7 @@
+<form action="{% url 'dowlandFile:results' %}" method="post">
+{% csrf_token %}
+{{form.errors}}
+<label for="your_file">Your fileDir:</label>
+    <input id="your_file" type="text" name="your_file" ,value="{{current_filename}}">
+	<input type="submit" value="OK">
+</form> 
